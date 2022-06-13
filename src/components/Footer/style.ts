@@ -120,4 +120,5 @@ export const Copyright = styled.div`
 
   background: ${c.primary500};
   color: white;
+  text-align: center;
 `;

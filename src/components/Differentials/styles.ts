@@ -5,8 +5,7 @@ import f from "@styles/typograph.json";
 
 export const Container = styled.div`
   max-width: 1440px;
-  padding: 60px 5% 0;
-  margin: 0 auto 60px;
+  padding: 20px 5% 40px 5%;
 
   @media (min-width: 1024px) {
     padding: 100px 5% 0;
@@ -15,7 +14,7 @@ export const Container = styled.div`
 
 export const Description = styled.p`
   max-width: 1000px;
-  margin: 40px auto 0;
+  margin: 20px auto 0;
 
   font-size: ${f.paragraphSmall.fontSize};
   line-height: ${f.paragraphSmall.lineHeight};
@@ -42,7 +41,7 @@ export const Carousel = styled.div`
   display: block;
 
   .swiper  {
-    padding: 60px 0;
+    padding: 40px 0 60px 0;
   }
 
   .swiper-slide {

@@ -5,12 +5,14 @@ import type { NextPage } from "next";
 import { Form } from "@components/Form";
 
 // Imgs
-import Fav from '../../public/favicon.png'
+import Fav from "../../public/favicon.png";
 
 // Styles
 import styled from "styled-components";
 
 const Container = styled.main`
+  padding-top: 100px;
+
   @media (min-width: 1024px) {
     padding-top: 70px;
   }
@@ -19,12 +21,12 @@ const Container = styled.main`
 const Contato: NextPage = () => {
   return (
     <Container>
-    <Head>
-      <title>OmegaCom | Contato</title>
-      <link rel="shortcut icon" href={Fav.src} type="image/x-icon" />
-    </Head>
+      <Head>
+        <title>OmegaCom | Contato</title>
+        <link rel="shortcut icon" href={Fav.src} type="image/x-icon" />
+      </Head>
 
-    <Form />
+      <Form />
     </Container>
   );
 };

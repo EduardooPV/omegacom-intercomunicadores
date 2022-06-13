@@ -13,7 +13,7 @@ export const Container = styled.h1<TitleProps>`
   margin: 0 auto;
 
   font-family: Montserrat, sans-serif;
-  font-size: ${props => props.small ? f.paragraphSmall.fontSize : f.paragraphLarge.fontSize};
+  font-size: ${props => props.small ? f.paragraphSmall.fontSize : f.h3.fontSize};
   line-height: ${f.h3.lineHeight};
   color: ${c.neutral500};
   text-align: center;

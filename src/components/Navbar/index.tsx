@@ -69,6 +69,7 @@ export default function Navbar() {
   });
 
   const [active, setActive] = useState(false);
+
   const Toggle = () => {
     setActive(!active);
   };
@@ -121,7 +122,7 @@ export default function Navbar() {
                 return (
                   <>
                     <Link href={value.link} key={index} passHref>
-                      <li>{value.text}</li>
+                      <li onClick={Toggle}>{value.text}</li>
                     </Link>
                   </>
                 );

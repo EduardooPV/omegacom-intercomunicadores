@@ -3,8 +3,7 @@ import c from "@styles/colors.json";
 
 export const Container = styled.div`
   max-width: 1440px;
-  padding: 60px 5% 0;
-  margin: 0 auto 60px;
+  padding: 20px 5% 40px 5%;
 
   @media (min-width: 1024px) {
     padding: 100px 5% 0;

@@ -35,6 +35,7 @@ export function Form() {
             label="Nome"
             placeholder="ex: Paulo André"
             mandatory
+            required
           />
           <LabelInput
             name="email"
@@ -42,6 +43,7 @@ export function Form() {
             label="E-mail"
             placeholder="ex: pauloandre@gmail.com"
             mandatory
+            required
           />
           <LabelInput
             name="celular"
@@ -49,6 +51,7 @@ export function Form() {
             label="Celular"
             placeholder="ex: (15) 98181-8181"
             mandatory
+            required
           />
           <LabelInput
             name="mensagem"

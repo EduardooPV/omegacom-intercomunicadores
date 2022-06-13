@@ -7,6 +7,7 @@ interface InputProps {
   type: string;
   name: string;
   mandatory?: boolean;
+  required?: boolean
 }
 
 export function LabelInput({
@@ -15,6 +16,7 @@ export function LabelInput({
   type,
   name,
   mandatory,
+  required
 }: InputProps) {
   return (
     <Container>
@@ -31,6 +33,7 @@ export function LabelInput({
           placeholder={placeholder}
           minLength={5}
           maxLength={100}
+          required
         />
       )}
     </Container>

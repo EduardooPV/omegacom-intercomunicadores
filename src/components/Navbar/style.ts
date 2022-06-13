@@ -36,7 +36,8 @@ export const Mobile = styled.div`
   @media(max-width: 1023px){
     padding-bottom: 80px;
     display: block;
-
+    position: fixed;
+    z-index: 999;
   }
   display: none;
 `;

@@ -4,7 +4,7 @@ import c from "@styles/colors.json";
 import f from "@styles/typograph.json";
 
 export const Container = styled.section`
-  min-height: 100vh;
+  height: 100vh;
   background: linear-gradient(
       360deg,
       rgba(0, 0, 0, 0) 9.95%,
@@ -30,7 +30,7 @@ export const Container = styled.section`
 
 export const Content = styled.div`
   max-width: 1440px;
-  min-height: 100vh;
+  height: 100vh;
 
   margin: 0 auto;
   padding: 0 5%;

@@ -10,7 +10,7 @@ import Fav from "../../public/favicon.png";
 import styled from "styled-components";
 
 const Container = styled.main`
-  padding-top: 20px;
+  padding-top: 120px;
 
   @media (min-width: 1024px) {
     padding-top: 120px;
