@@ -14,7 +14,7 @@ const Container = styled.main`
   padding-top: 100px;
 
   @media (min-width: 1024px) {
-    padding-top: 70px;
+    padding-top: 60px;
   }
 `;
 

@@ -90,3 +90,37 @@ export const FormContainer = styled.form`
     }
   }
 `;
+
+export const Popup = styled.div`
+  width: 80%;
+  max-width: 400px;
+
+  padding: 10px 20px;
+
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translate(-50%, 0px);
+
+  background: ${c.primary300};
+
+  font-size: ${f.paragraphLarge.fontSize};
+  line-height: 1.5rem;
+  color: ${c.white};
+  text-align: center;
+
+  border-radius: 0.25rem;
+  border: 2px solid ${c.white};
+  z-index: 5;
+  animation: slideY 1s;
+
+  @keyframes slideY {
+    from {
+      transform: translate(-50%, -90px);
+    }
+
+    to {
+      transform: translate(-50%, 0px);
+    }
+  }
+`;

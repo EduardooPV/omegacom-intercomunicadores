@@ -10,7 +10,7 @@ export const Container = styled.nav`
     justify-content: center;
 
     width: 100vw;
-    height: 70px;
+    height: 60px;
 
     background: white;
     box-shadow: 3px 3px 12px 0px #00000026;
@@ -26,7 +26,7 @@ export const Desk = styled.div`
   max-width: 1440px;
   justify-content: space-between;
 
-  height: 70px;
+  height: 60px;
   width: 100%;
 
   padding: 0 5%;
