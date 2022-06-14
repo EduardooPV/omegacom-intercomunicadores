@@ -85,30 +85,24 @@ export default function Footer() {
           <div>
             <Title>ONDE ESTAMOS</Title>
             <ContactContainer>
-              {Object.values(prop.contact).map((value, index) => {
-                return (
-                  <Contact key={index}>
-                    {value.icon && <img src={value.icon} />}{" "}
-                    {value.text && <a href={value.link}>{value.text}</a>}
-                  </Contact>
-                );
-              })}
+              {Object.values(prop.contact).map((value, index) => (
+                <Contact key={index}>
+                  {value.icon && <img src={value.icon} />}{" "}
+                  {value.text && <a href={value.link}>{value.text}</a>}
+                </Contact>
+              ))}
             </ContactContainer>
           </div>
           <div>
             <Title>NAVEGUE PELO SITE</Title>
             <ul>
-              {Object.values(prop.links).map((value, index) => {
-                return (
-                  <>
-                    <FooterLinks key={index}>
-                      <Link href={value.link} passHref>
-                        {value.text && <a>{value.text}</a>}
-                      </Link>
-                    </FooterLinks>
-                  </>
-                );
-              })}
+              {Object.values(prop.links).map((value, index) => (
+                <FooterLinks key={index}>
+                  <Link href={value.link} passHref>
+                    {value.text && <a>{value.text}</a>}
+                  </Link>
+                </FooterLinks>
+              ))}
             </ul>
           </div>
           <div>

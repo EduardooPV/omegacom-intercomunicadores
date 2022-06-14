@@ -88,18 +88,17 @@ export default function Navbar() {
           ) : null}
           <LinksContainer>
             <NavLinks>
-              {Object.values(prop.links).map((value, index) => {
-                return (
-                  <>
-                    <Link href={value.link} key={index}>
-                      <a>{value.text}</a>
-                    </Link>
-                  </>
-                );
-              })}
+              {Object.values(prop.links).map((value, index) => (
+                <Link href={value.link} key={index}>
+                  <a>{value.text}</a>
+                </Link>
+              ))}
             </NavLinks>
             <NavButtons>
-              <Link href="https://api.whatsapp.com/send?phone=5511944431037&text=Oi%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20intercomunicadores." passHref>
+              <Link
+                href="https://api.whatsapp.com/send?phone=5511944431037&text=Oi%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20intercomunicadores."
+                passHref
+              >
                 <Button>
                   {prop.button.text} <BsWhatsapp />
                 </Button>
@@ -118,15 +117,11 @@ export default function Navbar() {
           </IconContainer>
           <Menu className={active ? "menuOpen" : ""}>
             <ul key="links-container">
-              {Object.values(prop.links).map((value, index) => {
-                return (
-                  <>
-                    <Link href={value.link} key={index} passHref>
-                      <li onClick={Toggle}>{value.text}</li>
-                    </Link>
-                  </>
-                );
-              })}
+              {Object.values(prop.links).map((value, index) => (
+                <Link href={value.link} key={index} passHref>
+                  <li onClick={Toggle}>{value.text}</li>
+                </Link>
+              ))}
               <Link href={prop.button.link} passHref>
                 <Button href={prop.button.link}>
                   {prop.button.text} <BsWhatsapp />
