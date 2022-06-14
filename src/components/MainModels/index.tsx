@@ -17,17 +17,17 @@ const prop = [
   {
     img: "/components/CardProduto/Image.png",
     model: "Intercomunicador para Lotérica",
-    link: "#",
+    link: "/intercomunicador-loterica",
   },
   {
     img: "/components/CardProduto/Image.png",
     model: "Intercomunicador para Condominio",
-    link: "#",
+    link: "/intercomunicador-condominio",
   },
   {
     img: "/components/CardProduto/Image.png",
     model: "Intercomunicador para Bilheteria",
-    link: "#",
+    link: "/intercomunicador-bilheteria",
   },
 ];
 

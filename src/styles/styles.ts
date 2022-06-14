@@ -8,7 +8,6 @@ const Container = styled.main`
 
   display: flex;
   flex-direction: column;
-  gap: 40px;
 
   > h1 {
     font-family: Montserrat, sans-serif;

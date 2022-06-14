@@ -44,10 +44,10 @@ export function PresentationProduct({ props }: PresentationProduct) {
           </ul>
 
           <ContainerButton>
-            <Button href={props.linkBuy} fullWidth>
+            <Button href={props.linkBuy} >
               COMPRE AGORA
             </Button>
-            <Button href={props.linkManual} transparent fullWidth>
+            <Button href={props.linkManual} transparent >
               Manual instalação
             </Button>
           </ContainerButton>

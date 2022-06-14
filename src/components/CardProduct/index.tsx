@@ -1,4 +1,3 @@
-
 import LinkItem from "@components/Button";
 import Image from "next/image";
 import React from "react";
@@ -22,7 +21,12 @@ export function CardProduct({ props }: CardCardProductProps) {
 
       <p>{props.model}</p>
 
-      <LinkItem href={props.link} transparent icon={<FaArrowRight />} fullWidth>
+      <LinkItem
+        href={`/produto/${props.link}`}
+        transparent
+        icon={<FaArrowRight />}
+        fullWidth
+      >
         VER MODELO
       </LinkItem>
     </Container>
